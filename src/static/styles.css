@@ -20,7 +20,7 @@ header {
   padding: 20px 0;
   margin-bottom: 30px;
   background-color: #1a237e;
-  color: white;
+  color: #fff; /* Use shorthand for white */
   border-radius: 5px;
 }
 
@@ -42,7 +42,7 @@ main {
 }
 
 section {
-  background-color: white;
+  background-color: #fff; /* Use shorthand for white */
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -90,7 +90,7 @@ section h3 {
 .activity-card ul li {
   margin-bottom: 5px;
   font-size: 14px;
-  color: #333333;
+  color: #333; /* Use shorthand for gray */
   word-wrap: break-word; /* Ensure long names wrap properly */
 }
 
@@ -99,12 +99,12 @@ section h3 {
 }
 
 .activity-card ul::-webkit-scrollbar-thumb {
-  background-color: #cccccc;
+  background-color: #ccc; /* Use shorthand for gray */
   border-radius: 4px;
 }
 
 .activity-card ul::-webkit-scrollbar-thumb:hover {
-  background-color: #bbbbbb;
+  background-color: #bbb; /* Use shorthand for gray */
 }
 
 .form-group {
@@ -128,7 +128,7 @@ section h3 {
 
 button {
   background-color: #1a237e;
-  color: white;
+  color: #fff; /* Use shorthand for white */
   border: none;
   padding: 10px 15px;
   font-size: 16px;
@@ -157,12 +157,6 @@ button:hover {
   background-color: #ffebee;
   color: #c62828;
   border: 1px solid #ef9a9a;
-}
-
-.info {
-  background-color: #d1ecf1;
-  color: #0c5460;
-  border: 1px solid #bee5eb;
 }
 
 .hidden {
