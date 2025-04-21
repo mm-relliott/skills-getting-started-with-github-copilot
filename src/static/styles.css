@@ -82,8 +82,9 @@ section h3 {
   background-color: #f1f1f1;
   border: 1px solid #ddd;
   border-radius: 5px;
-  max-height: 150px; /* Added max-height for scrollable list */
-  overflow-y: auto; /* Enable scrolling for long lists */
+  max-height: 150px;
+  overflow-y: auto;
+  scrollbar-width: thin; /* For Firefox */
 }
 
 .activity-card ul li {
