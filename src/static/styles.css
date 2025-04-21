@@ -94,6 +94,19 @@ section h3 {
   word-wrap: break-word; /* Ensure long names wrap properly */
 }
 
+.activity-card ul::-webkit-scrollbar {
+  width: 8px; /* For Chrome, Safari, and Edge */
+}
+
+.activity-card ul::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.activity-card ul::-webkit-scrollbar-thumb:hover {
+  background-color: #bbb;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
