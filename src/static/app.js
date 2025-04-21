@@ -87,11 +87,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Toggle dark mode
-  document.getElementById("dark-mode-toggle").addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-  });
-
   // Initialize app
   fetchActivities();
 });
