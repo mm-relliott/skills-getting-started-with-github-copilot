@@ -166,7 +166,7 @@ button:hover {
 }
 
 .hidden {
-  display: none;
+  display: none !important; /* Ensure it overrides other styles */
 }
 
 footer {

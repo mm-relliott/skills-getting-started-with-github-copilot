@@ -67,11 +67,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (response.ok) {
         messageDiv.textContent = result.message;
-        messageDiv.className = "success";
+        messageDiv.className = "message success"; // Ensure proper class assignment
         signupForm.reset();
       } else {
         messageDiv.textContent = result.detail || "An error occurred";
-        messageDiv.className = "error";
+        messageDiv.className = "message error"; // Ensure proper class assignment
       }
 
       messageDiv.classList.remove("hidden");
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 5000);
     } catch (error) {
       messageDiv.textContent = "Failed to sign up. Please try again.";
-      messageDiv.className = "error";
+      messageDiv.className = "message error"; // Ensure proper class assignment
       messageDiv.classList.remove("hidden");
       console.error("Error signing up:", error);
     }
