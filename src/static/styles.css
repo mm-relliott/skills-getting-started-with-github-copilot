@@ -136,15 +136,18 @@ button {
   transition: background-color 0.2s;
 }
 
+
 button:hover {
   background-color: #3949ab;
 }
+
 
 .message {
   margin-top: 20px;
   padding: 10px;
   border-radius: 4px;
 }
+
 
 .success {
   background-color: #e8f5e9;
