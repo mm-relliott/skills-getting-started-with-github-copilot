@@ -20,7 +20,7 @@ header {
   padding: 20px 0;
   margin-bottom: 30px;
   background-color: #1a237e;
-  color: #fff; /* Use shorthand for white */
+  color: white; /* #fff;  Use shorthand for white - This is actually set to white in aschielts-midmark repo */
   border-radius: 5px;
 }
 
@@ -42,7 +42,7 @@ main {
 }
 
 section {
-  background-color: #fff; /* Use shorthand for white */
+  background-color: white; /* fff Use shorthand for white */
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -72,39 +72,49 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+  font-size: 15px; /* Originally missing from my file, but was in Andrews */
 }
 
 .activity-card ul {
-  margin-top: 10px;
-  padding: 10px 20px;
-  list-style-type: disc;
-  color: #555;
-  background-color: #f1f1f1;
-  border: 1px solid #ddd;
+  margin-top: 15px;
+  padding: 15px;
+  list-style-type: none;
+  background-color: #eef6ff; /* Subtle blue background for participant section */
+  border: 1px solid #b0c4de;
   border-radius: 5px;
-  max-height: 150px;
-  overflow-y: auto;
-  scrollbar-width: thin; /* For Firefox */
+  color: #333;
+  font-size: 14px;
 }
 
 .activity-card ul li {
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: #333; /* Use shorthand for gray */
-  word-wrap: break-word; /* Ensure long names wrap properly */
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.activity-card ul::-webkit-scrollbar {
-  width: 8px; /* For Chrome, Safari, and Edge */
+.activity-card ul li:last-child {
+  margin-bottom: 0;
 }
 
-.activity-card ul::-webkit-scrollbar-thumb {
-  background-color: #ccc; /* Use shorthand for gray */
-  border-radius: 4px;
+.activity-card ul li::before {
+  content: "•"; /* Add a bullet point for each participant */
+  color: #1a237e;
+  font-size: 16px;
 }
 
-.activity-card ul::-webkit-scrollbar-thumb:hover {
-  background-color: #bbb; /* Use shorthand for gray */
+.activity-card ul:before {
+  content: "Participants:";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1a237e;
+  font-size: 16px;
 }
 
 .form-group {
@@ -117,7 +127,8 @@ section h3 {
   font-weight: bold;
 }
 
-.form-group input, .form-group select {
+.form-group input,
+.form-group select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
@@ -127,7 +138,7 @@ section h3 {
 
 button {
   background-color: #1a237e;
-  color: #fff; /* Use shorthand for white */
+  color: white; /* Use shorthand for white - Originally #fff */
   border: none;
   padding: 10px 15px;
   font-size: 16px;
@@ -136,18 +147,15 @@ button {
   transition: background-color 0.2s;
 }
 
-
 button:hover {
   background-color: #3949ab;
 }
-
 
 .message {
   margin-top: 20px;
   padding: 10px;
   border-radius: 4px;
 }
-
 
 .success {
   background-color: #e8f5e9;
@@ -160,9 +168,15 @@ button:hover {
   color: #c62828;
   border: 1px solid #ef9a9a;
 }
+/* Info section was originally missing from my commit */
+.info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
 
 .hidden {
-  display: none !important; /* Ensure it overrides other styles */
+  display: none;
 }
 
 footer {
